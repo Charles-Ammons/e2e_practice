@@ -1,10 +1,12 @@
+import {Provider} from 'react-redux';
+import store from './store/index.js';
 import ListScreen from './components/ListScreen';
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <ListScreen />
-    </div>
+    </Provider>
   );
 }
 

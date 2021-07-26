@@ -4,8 +4,11 @@ import {render} from '@testing-library/react';
 describe('RestaurantList', () => {
   it('loads restaurants on first render', () => {
     const loadRestaurants = jest.fn().mockName('loadRestaurants');
+    const restaurants = [];
 
-    render(<ListComp loadRestaurants={loadRestaurants} />);
+    render(
+      <ListComp loadRestaurants={loadRestaurants} restaurants={restaurants} />,
+    );
 
     expect(loadRestaurants).toHaveBeenCalled();
   });
