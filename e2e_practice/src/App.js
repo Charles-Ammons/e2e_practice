@@ -1,7 +1,11 @@
-import './App.css';
+import ListScreen from './components/ListScreen';
 
 function App() {
-  return <div className="App">Testing</div>;
+  return (
+    <div>
+      <ListScreen />
+    </div>
+  );
 }
 
 export default App;
